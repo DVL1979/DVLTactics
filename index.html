@@ -8,20 +8,59 @@
         body {
             background-color: black;
             color: red;
-            text-align: center;
             font-family: Arial, sans-serif;
-            padding-top: 20%;
+            display: flex;
         }
-        h1 {
-            font-size: 3em;
+        nav {
+            width: 200px;
+            padding: 20px;
+            position: fixed;
+            height: 100%;
         }
-        p {
-            font-size: 1.5em;
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 10px 0;
+        }
+        nav ul li a {
+            color: red;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        main {
+            margin-left: 220px;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        h1, h2 {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>DVL Tactics</h1>
-    <p>Page under construction</p>
+    <nav>
+        <ul>
+            <li><a href="#bear-hunt">Bear Hunt</a></li>
+            <li><a href="#foundry">Foundry</a></li>
+            <li><a href="#crazy-joe">Crazy Joe</a></li>
+            <li><a href="#general-tips">General Tips</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>DVL Tactics</h1>
+        <h2 id="bear-hunt">Bear Hunt</h2>
+        <p>Content for Bear Hunt...</p>
+        
+        <h2 id="foundry">Foundry</h2>
+        <p>Content for Foundry...</p>
+        
+        <h2 id="crazy-joe">Crazy Joe</h2>
+        <p>Content for Crazy Joe...</p>
+        
+        <h2 id="general-tips">General Tips</h2>
+        <p>Content for General Tips...</p>
+    </main>
 </body>
 </html>
